@@ -1,0 +1,24 @@
+:root {
+	font-family: var(--font-sans);
+	font-size: var(--text-base);
+	line-height: var(--leading-normal);
+	color: var(--color-text-primary);
+	background-color: var(--color-surface);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+button.unstyled {
+	background: none;
+	border: none;
+	padding: var(--spacing-0);
+	margin: var(--spacing-0);
+	font: inherit;
+	color: inherit;
+	cursor: pointer;
+	text-align: inherit;
+}
+
+button.unstyled:disabled {
+	cursor: default;
+}

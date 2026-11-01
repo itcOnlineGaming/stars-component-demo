@@ -1,0 +1,52 @@
+{
+	"name": "stars-component-demo",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"engines": {
+		"node": ">=22.0.0"
+	},
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"prepare": "svelte-kit sync || echo ''",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"tokens:generate": "node ui/tokens/sd.config.mjs && npm run tokens:check",
+		"tokens:check": "node ui/tokens/check-usage.mjs --strict",
+		"lint:css": "stylelint \"src/**/*.{css,svelte}\" \"ui/**/*.{css,svelte}\" --ignore-path .stylelintignore && node ui/tokens/check-usage.mjs --strict",
+		"test:unit": "vitest run --project unit",
+		"test:unit:watch": "vitest --project unit",
+		"test:e2e": "playwright test",
+		"test": "npm run lint:css && npm run check && npm run test:unit",
+		"storybook": "storybook dev -p 6006",
+		"build-storybook": "storybook build"
+	},
+	"dependencies": {
+		"@lucide/svelte": "1.34.0"
+	},
+	"devDependencies": {
+		"@playwright/test": "1.55.0",
+		"@storybook/addon-a11y": "10.5.7",
+		"@storybook/addon-docs": "10.5.7",
+		"@storybook/sveltekit": "10.5.7",
+		"@sveltejs/adapter-auto": "3.3.0",
+		"@sveltejs/kit": "2.21.5",
+		"@sveltejs/vite-plugin-svelte": "5.0.0",
+		"@testing-library/jest-dom": "6.6.3",
+		"@testing-library/svelte": "5.2.8",
+		"@types/node": "24.13.4",
+		"jsdom": "26.1.0",
+		"playwright": "1.55.0",
+		"postcss-html": "1.8.1",
+		"storybook": "10.5.7",
+		"style-dictionary": "5.6.0",
+		"stylelint": "17.14.1",
+		"svelte": "5.28.0",
+		"svelte-check": "4.7.5",
+		"typescript": "5.9.3",
+		"vite": "6.3.5",
+		"vitest": "3.2.6"
+	}
+}

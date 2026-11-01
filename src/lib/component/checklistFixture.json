@@ -1,0 +1,107 @@
+{
+	"title": "Git Self-Efficacy Checklist",
+	"history": [
+		{
+			"date": "2026-10-05",
+			"label": "5 Oct",
+			"minRating": 1
+		},
+		{
+			"date": "2026-10-12",
+			"label": "12 Oct",
+			"minRating": 1
+		},
+		{
+			"date": "2026-10-19",
+			"label": "19 Oct",
+			"minRating": 2
+		},
+		{
+			"date": "2026-10-26",
+			"label": "26 Oct",
+			"minRating": 2
+		}
+	],
+	"questions": [
+		{
+			"id": "q1",
+			"questionNumber": 1,
+			"statement": "I can create a feature branch and switch between branches without losing work"
+		},
+		{
+			"id": "q2",
+			"questionNumber": 2,
+			"statement": "I can check what a commit will contain before I make it (git status, git diff)"
+		},
+		{
+			"id": "q3",
+			"questionNumber": 3,
+			"statement": "I can bring my branch up to date with my teammates' work using git fetch and git rebase origin/main"
+		},
+		{
+			"id": "q4",
+			"questionNumber": 4,
+			"statement": "I can read conflict markers, including the base section, and say what each side changed"
+		},
+		{
+			"id": "q5",
+			"questionNumber": 5,
+			"statement": "I can resolve a conflict in VS Code and continue the rebase"
+		},
+		{
+			"id": "q6",
+			"questionNumber": 6,
+			"statement": "I can say which side is mine and which is my teammate's during a rebase"
+		},
+		{
+			"id": "q7",
+			"questionNumber": 7,
+			"statement": "I can back out of a rebase partway through, and undo one I've finished"
+		},
+		{
+			"id": "q8",
+			"questionNumber": 8,
+			"statement": "I can squash several small commits into one with git rebase -i"
+		},
+		{
+			"id": "q9",
+			"questionNumber": 9,
+			"statement": "I can merge my branch into main with --ff-only, and recover when Git refuses"
+		},
+		{
+			"id": "q10",
+			"questionNumber": 10,
+			"statement": "I can run the tests after a rebase and decide whether it's safe to push"
+		},
+		{
+			"id": "q11",
+			"questionNumber": 11,
+			"statement": "I can read git log --graph and explain what has happened"
+		},
+		{
+			"id": "q12",
+			"questionNumber": 12,
+			"statement": "I can agree a resolution with the teammate whose code conflicts with mine"
+		},
+		{
+			"id": "q13",
+			"questionNumber": 13,
+			"statement": "I can get my work into main when other teammates are pushing at the same time"
+		}
+	],
+	"ratings": {
+		"q1": 5,
+		"q2": 5,
+		"q3": 4,
+		"q4": 3,
+		"q5": 4,
+		"q6": 3,
+		"q7": 3,
+		"q8": 3,
+		"q9": 3,
+		"q10": 4,
+		"q11": 3,
+		"q12": 4,
+		"q13": 3
+	}
+}

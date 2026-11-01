@@ -1,0 +1,10 @@
+/*
+ * Tokens that tokens.json cannot hold, so they are written by hand.
+ * The generated files next to this one are overwritten by npm run tokens:build.
+ *
+ * A DTCG gradient is a list of colour stops with no angle, so the 135deg
+ * accent gradient stays here, built from the palette tokens.
+ */
+:root {
+	--gradient-accent: linear-gradient(135deg, var(--purple-500) 0%, var(--purple-600) 100%);
+}

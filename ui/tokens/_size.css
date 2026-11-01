@@ -1,0 +1,12 @@
+/* Generated from tokens.json — do not edit */
+
+:root {
+	--container-xs: 20rem;
+	--container-sm: 40rem;
+	--container-md: 50rem;
+	--container-lg: 60rem;
+	--container-xl: 75rem;
+	--container-dialog: 30rem;
+	--column-min-sm: 11rem;
+	--column-min-md: 14rem;
+}

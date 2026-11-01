@@ -1,0 +1,7 @@
+/* Generated from tokens.json — do not edit */
+
+:root {
+	--duration-fast: 100ms;
+	--duration-slow: 400ms;
+	--ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+}

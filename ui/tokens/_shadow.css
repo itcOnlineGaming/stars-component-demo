@@ -1,0 +1,21 @@
+/* Generated from tokens.json — do not edit */
+
+:root {
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+	--shadow-md: 0 2px 4px rgba(0, 0, 0, 0.08), 0 1px 2px rgba(0, 0, 0, 0.04);
+	--shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.12), 0 2px 4px rgba(0, 0, 0, 0.06);
+	--shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.15), 0 4px 8px rgba(0, 0, 0, 0.08);
+	--shadow-none: none;
+	--shadow-focus: 0 0 0 3px rgba(37, 99, 235, 0.15);
+	--glow-sm: 8px;
+	--glow-md: 16px;
+	--glow-lg: 24px;
+	--edge-depth: 4px;
+}
+
+:root[data-theme='dark'] {
+	--shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+	--shadow-md: 0 2px 4px rgba(0, 0, 0, 0.4), 0 1px 2px rgba(0, 0, 0, 0.3);
+	--shadow-lg: 0 4px 12px rgba(0, 0, 0, 0.5), 0 2px 4px rgba(0, 0, 0, 0.3);
+	--shadow-xl: 0 8px 24px rgba(0, 0, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.4);
+}
