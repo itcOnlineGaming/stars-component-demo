@@ -16,6 +16,10 @@ const config: StorybookConfig = {
 			$lib: resolve(__dirname, '../src/lib'),
 			$components: resolve(__dirname, '../src/lib/component')
 		};
+		// Storybook replaces vite.config.ts's `server` block, so re-allow ui/ here
+		config.server ??= {};
+		config.server.fs ??= {};
+		config.server.fs.allow = [...(config.server.fs.allow ?? []), resolve(__dirname, '../ui')];
 		return config;
 	}
 };
