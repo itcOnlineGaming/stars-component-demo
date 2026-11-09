@@ -3,7 +3,6 @@ import SelfEfficacyChecklist from './SelfEfficacyChecklist.svelte';
 import { createMockSelfEfficacyApi } from './mockSelfEfficacyApi';
 
 const meta = {
-	title: 'StudentDemo/SelfEfficacyChecklist',
 	component: SelfEfficacyChecklist,
 	parameters: {
 		layout: 'fullscreen'

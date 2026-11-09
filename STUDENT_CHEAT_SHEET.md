@@ -11,6 +11,8 @@ One-page reference for building, styling, testing and submitting your STARS Svel
 - **Svelte 5 runes only.** Use `$props()`, `$state()`, and `$derived()`. Do not use legacy Svelte 4 `export let` or `$:` reactive statements.
 - **No direct `fetch()` calls.** Your component receives data and actions via `$props()` (for example `let { api, user, group } = $props();`). In your repo, the dev harness passes mock data; in STARS, the host page passes the live API.
 - **No global CSS or extra npm packages.** Do not use `:global(...)` selectors that leak styles to the rest of the page, and only import from `svelte`, `@lucide/svelte`, and `$ui/components` (your `package.json` is not copied into STARS).
+- **Your component lives in `src/lib/component/` at the root of your repository.** The script copies only that folder, so it must be at exactly that path: not inside a subfolder such as `my-svelte-app/src/lib/component/`. If you copied the demo app into a folder of its own, move its contents up to the repository root, or tell us the folder's path.
+- **Leave out `title` in your `*.stories.ts`.** Every team's stories end up in one STARS Storybook, and two stories files with the same title stop the tests from starting, so your component fails the checks and is not deployed. Your own repository holds only your copy, so you will not see the clash there. Without a `title`, Storybook names your stories after your folder, which is always unique. If you started from the demo, delete its `title: 'StudentDemo/SelfEfficacyChecklist'` line, including in the demo checklist if you kept it.
 
 ---
 
